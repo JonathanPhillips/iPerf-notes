@@ -12,9 +12,13 @@ Or if testing out to public, setup a server in another physical location ideally
 Run the client
 
 Internal
+
 iperf3.exe -c [server] -V -b 100M -P 20 --logfile filename1.log
+
 iperf3.exe -c [server] -V -b 100M -P 20 -R --logfile filename2.log
 
 External
+
 iperf3.exe -c [server] -V -b 100M -P 5 --logfile filename1.log
+
 iperf3.exe -c [server] -V -b 100M -P 5 -R --logfile filename2.log
